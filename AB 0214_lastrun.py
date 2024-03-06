@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on marzo 06, 2024, at 12:48
+    on marzo 06, 2024, at 15:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -391,7 +391,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "instructions" ---
     text_insctructions = visual.TextStim(win=win, name='text_insctructions',
-        text='指导语\n\n如果看到奇数，请按键盘上的F键。\n如果看到偶数，请按键盘上的J键。\n请您集中注意力，反应要尽可能准确且迅速。准备好后，我们将开始测试。\n\n祝您好运！\n\nInstructions\n\nIf you see an odd number, please press the F key on your keyboard.\nIf you see an even number, please press the J key on your keyboard.\nPlease focus your attention and try to respond as accurately and swiftly as possible. Once you are ready, we will begin the test.\n',
+        text='Instructions\n\nIf you see an odd number, please press the F key on your keyboard.\nIf you see an even number, please press the J key on your keyboard.\nPlease focus your attention and try to respond as accurately and swiftly as possible. Once you are ready, we will begin the test.\n\n\n指导语\n\n如果看到奇数，请按键盘上的F键。\n如果看到偶数，请按键盘上的J键。\n请您集中注意力，反应要尽可能准确且迅速。准备好后，我们将开始测试。\n\n祝您好运！',
         font='Open Sans',
         pos=(0, 0), height=0.02, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -467,7 +467,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
-    text_7 = visual.TextStim(win=win, name='text_7',
+    text_T1ask = visual.TextStim(win=win, name='text_T1ask',
         text='?\n\nOdd-F    Even-J',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
@@ -491,7 +491,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
-    text_11 = visual.TextStim(win=win, name='text_11',
+    text_T2ask = visual.TextStim(win=win, name='text_T2ask',
         text='?\n\nRelated-F    Unrelated-J',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
@@ -538,7 +538,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Run Routine "instructions" ---
     routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 1.0:
+    while continueRoutine and routineTimer.getTime() < 2.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -569,7 +569,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # if text_insctructions is stopping this frame...
         if text_insctructions.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_insctructions.tStartRefresh + 1-frameTolerance:
+            if tThisFlipGlobal > text_insctructions.tStartRefresh + 2-frameTolerance:
                 # keep track of stop time/frame for later
                 text_insctructions.tStop = t  # not accounting for scr refresh
                 text_insctructions.frameNStop = frameN  # exact frame index
@@ -609,12 +609,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-1.000000)
+        routineTimer.addTime(-2.000000)
     
     # set up handler to look after randomisation of conditions etc
     block = data.TrialHandler(nReps=1.0, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('wordlist1.csv'),
+        trialList=data.importConditions('LuckList.csv'),
         seed=None, name='block')
     thisExp.addLoop(block)  # add the loop to the experiment
     thisBlock = block.trialList[0]  # so we can initialise stimuli with some values
@@ -644,7 +644,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('context.started', globalClock.getTime())
-        context_word.setText(probe)
+        context_word.setText(context)
         # keep track of which components have finished
         contextComponents = [context_word, blankContext]
         for thisComponent in contextComponents:
@@ -770,7 +770,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_context = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('distractorlist.csv', selection=firstnum),
+            trialList=data.importConditions('LuckList.csv', selection=lagT1),
             seed=None, name='trials_context')
         thisExp.addLoop(trials_context)  # add the loop to the experiment
         thisTrials_context = trials_context.trialList[0]  # so we can initialise stimuli with some values
@@ -800,7 +800,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(dislist)
+            text_disctractors.setText(distractors)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
@@ -896,7 +896,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('T1_number.started', globalClock.getTime())
-        text_T1.setText(bignum)
+        text_T1.setText(T1)
         # keep track of which components have finished
         T1_numberComponents = [text_T1]
         for thisComponent in T1_numberComponents:
@@ -989,7 +989,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_T1 = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('distractorlist.csv', selection='0:5'),
+            trialList=data.importConditions('LuckList.csv', selection=lagT2),
             seed=None, name='trials_T1')
         thisExp.addLoop(trials_T1)  # add the loop to the experiment
         thisTrials_T1 = trials_T1.trialList[0]  # so we can initialise stimuli with some values
@@ -1019,7 +1019,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(dislist)
+            text_disctractors.setText(distractors)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
@@ -1120,7 +1120,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('T2_probe.started', globalClock.getTime())
-        text_T2.setText(sectag)
+        text_T2.setText(T2)
         # keep track of which components have finished
         T2_probeComponents = [text_T2]
         for thisComponent in T2_probeComponents:
@@ -1213,7 +1213,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_T2 = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('distractorlist.csv', selection='0:5'),
+            trialList=data.importConditions('LuckList.csv', selection=lagEnd),
             seed=None, name='trials_T2')
         thisExp.addLoop(trials_T2)  # add the loop to the experiment
         thisTrials_T2 = trials_T2.trialList[0]  # so we can initialise stimuli with some values
@@ -1243,7 +1243,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(dislist)
+            text_disctractors.setText(distractors)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
@@ -1348,7 +1348,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         key_resp_T1.rt = []
         _key_resp_T1_allKeys = []
         # keep track of which components have finished
-        Ask_T1Components = [blankT1_1, text_7, blankT1_2, key_resp_T1]
+        Ask_T1Components = [blankT1_1, text_T1ask, blankT1_2, key_resp_T1]
         for thisComponent in Ask_T1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1404,38 +1404,38 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     blankT1_1.status = FINISHED
                     blankT1_1.setAutoDraw(False)
             
-            # *text_7* updates
+            # *text_T1ask* updates
             
-            # if text_7 is starting this frame...
-            if text_7.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+            # if text_T1ask is starting this frame...
+            if text_T1ask.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
                 # keep track of start time/frame for later
-                text_7.frameNStart = frameN  # exact frame index
-                text_7.tStart = t  # local t and not account for scr refresh
-                text_7.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
+                text_T1ask.frameNStart = frameN  # exact frame index
+                text_T1ask.tStart = t  # local t and not account for scr refresh
+                text_T1ask.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_T1ask, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_7.started')
+                thisExp.timestampOnFlip(win, 'text_T1ask.started')
                 # update status
-                text_7.status = STARTED
-                text_7.setAutoDraw(True)
+                text_T1ask.status = STARTED
+                text_T1ask.setAutoDraw(True)
             
-            # if text_7 is active this frame...
-            if text_7.status == STARTED:
+            # if text_T1ask is active this frame...
+            if text_T1ask.status == STARTED:
                 # update params
                 pass
             
-            # if text_7 is stopping this frame...
-            if text_7.status == STARTED:
+            # if text_T1ask is stopping this frame...
+            if text_T1ask.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_7.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > text_T1ask.tStartRefresh + 2-frameTolerance:
                     # keep track of stop time/frame for later
-                    text_7.tStop = t  # not accounting for scr refresh
-                    text_7.frameNStop = frameN  # exact frame index
+                    text_T1ask.tStop = t  # not accounting for scr refresh
+                    text_T1ask.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'text_7.stopped')
+                    thisExp.timestampOnFlip(win, 'text_T1ask.stopped')
                     # update status
-                    text_7.status = FINISHED
-                    text_7.setAutoDraw(False)
+                    text_T1ask.status = FINISHED
+                    text_T1ask.setAutoDraw(False)
             
             # *blankT1_2* updates
             
@@ -1570,7 +1570,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         key_resp_T2.rt = []
         _key_resp_T2_allKeys = []
         # keep track of which components have finished
-        Ask_T2Components = [blankT2_1, text_11, blankT2_2, key_resp_T2]
+        Ask_T2Components = [blankT2_1, text_T2ask, blankT2_2, key_resp_T2]
         for thisComponent in Ask_T2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1626,38 +1626,38 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     blankT2_1.status = FINISHED
                     blankT2_1.setAutoDraw(False)
             
-            # *text_11* updates
+            # *text_T2ask* updates
             
-            # if text_11 is starting this frame...
-            if text_11.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+            # if text_T2ask is starting this frame...
+            if text_T2ask.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
                 # keep track of start time/frame for later
-                text_11.frameNStart = frameN  # exact frame index
-                text_11.tStart = t  # local t and not account for scr refresh
-                text_11.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(text_11, 'tStartRefresh')  # time at next scr refresh
+                text_T2ask.frameNStart = frameN  # exact frame index
+                text_T2ask.tStart = t  # local t and not account for scr refresh
+                text_T2ask.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_T2ask, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_11.started')
+                thisExp.timestampOnFlip(win, 'text_T2ask.started')
                 # update status
-                text_11.status = STARTED
-                text_11.setAutoDraw(True)
+                text_T2ask.status = STARTED
+                text_T2ask.setAutoDraw(True)
             
-            # if text_11 is active this frame...
-            if text_11.status == STARTED:
+            # if text_T2ask is active this frame...
+            if text_T2ask.status == STARTED:
                 # update params
                 pass
             
-            # if text_11 is stopping this frame...
-            if text_11.status == STARTED:
+            # if text_T2ask is stopping this frame...
+            if text_T2ask.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_11.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > text_T2ask.tStartRefresh + 2-frameTolerance:
                     # keep track of stop time/frame for later
-                    text_11.tStop = t  # not accounting for scr refresh
-                    text_11.frameNStop = frameN  # exact frame index
+                    text_T2ask.tStop = t  # not accounting for scr refresh
+                    text_T2ask.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'text_11.stopped')
+                    thisExp.timestampOnFlip(win, 'text_T2ask.stopped')
                     # update status
-                    text_11.status = FINISHED
-                    text_11.setAutoDraw(False)
+                    text_T2ask.status = FINISHED
+                    text_T2ask.setAutoDraw(False)
             
             # *blankT2_2* updates
             
