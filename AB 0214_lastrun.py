@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on marzo 06, 2024, at 15:32
+    on marzo 07, 2024, at 12:04
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,81 +33,6 @@ import sys  # to get file system encoding
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
-# Run 'Before Experiment' code from code
-import csv
-import random
-
-def read_and_shuffle_csv(input_file, output_file):
-    # 确保以正确的编码格式读取CSV文件Ensure the CSV file is read with the correct encoding format.
-    with open(input_file, mode='r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        next(reader)  # 跳过第一行 Skip the first line.
-        # 将所有行的内容合并为一个字符串，同时去除逗号 Convert the text into a list of characters, and shuffle the order randomly.
-        text = ''.join([''.join(row[:2]).replace(',', '') for row in reader])
-
-    # 将文本转换为字符列表，并随机打乱顺序 Convert the text into a list of characters, and shuffle the order randomly.
-    characters = list(text)
-    random.shuffle(characters)
-
-    # 将字符分组，每组七个 Group the characters, seven per group.
-    groups = [characters[i:i + 2] for i in range(0, len(characters), 2)]
-
-    # 确保在写入文件时也使用UTF-8编码Ensure that UTF-8 encoding is also used when writing to the file.
-    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(['dislist'])  # 写入表头 Write the header.
-        for group in groups:
-            writer.writerow([''.join(group)])  # 写入每一组Write each group.
-
-    return output_file
-
-# 注意替换这里的路径为实际路径Note to replace the paths here with actual paths.
-input_csv = 'wordlist.csv'  # 替换为源CSV文件的路径Replace with the path to the source CSV file.
-output_csv = 'distractorlist.csv'  # 替换为输出CSV文件的路径 Replace with the path to the output CSV file.
-
-# 调用函数进行处理Call the function for processing.
-shuffled_csv = read_and_shuffle_csv(input_csv, output_csv)
-print(f"Shuffled CSV saved to: {shuffled_csv}")
-def shuffle_columns(rows, column_indices):
-    # Extract the specific columns to shuffle
-    columns_to_shuffle = [[row[index] for row in rows] for index in column_indices]
-    
-    # Shuffle the extracted columns independently
-    for column in columns_to_shuffle:
-        random.shuffle(column)
-    
-    # Reinsert the shuffled columns back into the rows
-    for i, row in enumerate(rows):
-        for col_index, column in zip(column_indices, columns_to_shuffle):
-            row[col_index] = column[i]
-
-def read_and_shuffle_csv(input_file, output_file):
-    with open(input_file, mode='r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        headers = next(reader)  # Read the header row
-        rows = list(reader)     # Read the rest of the rows
-
-    # Shuffle the fourth and fifth columns (indices 3 and 4)
-    shuffle_columns(rows, [3, 4])
-
-    # Shuffle the last three columns (indices 5, 6, and 7)
-    shuffle_columns(rows, [5, 6, 7])
-
-    # Write the shuffled rows back to a new CSV file
-    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(headers)  # Write the header row
-        writer.writerows(rows)    # Write the shuffled rows
-
-    return output_file
-
-# 注意替换这里的路径为实际路径
-input_csv = 'wordlist.csv'  # 替换为源CSV文件的路径
-output_csv = 'wordlist1.csv'  # 替换为输出CSV文件的路径
-
-# 调用函数进行处理
-shuffled_csv = read_and_shuffle_csv(input_csv, output_csv)
-print(f"Shuffled CSV saved to: {shuffled_csv}")
 # --- Setup global variables (available in all functions) ---
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -233,7 +158,7 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=(1024, 768), fullscr=True, screen=0,
+            size=[400, 300], fullscr=False, screen=0,
             winType='pyglet', allowStencil=False,
             monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
@@ -250,7 +175,7 @@ def setupWindow(expInfo=None, win=None):
         win.backgroundImage = ''
         win.backgroundFit = 'none'
         win.units = 'height'
-    win.mouseVisible = False
+    win.mouseVisible = True
     win.hideMessage()
     return win
 
@@ -538,7 +463,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Run Routine "instructions" ---
     routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 2.0:
+    while continueRoutine and routineTimer.getTime() < 0.2:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -569,7 +494,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # if text_insctructions is stopping this frame...
         if text_insctructions.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_insctructions.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > text_insctructions.tStartRefresh + 0.2-frameTolerance:
                 # keep track of stop time/frame for later
                 text_insctructions.tStop = t  # not accounting for scr refresh
                 text_insctructions.frameNStop = frameN  # exact frame index
@@ -609,7 +534,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-2.000000)
+        routineTimer.addTime(-0.200000)
     
     # set up handler to look after randomisation of conditions etc
     block = data.TrialHandler(nReps=1.0, method='random', 
@@ -644,7 +569,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('context.started', globalClock.getTime())
-        context_word.setText(context)
+        context_word.setText(T0)
         # keep track of which components have finished
         contextComponents = [context_word, blankContext]
         for thisComponent in contextComponents:
@@ -770,7 +695,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_context = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('LuckList.csv', selection=lagT1),
+            trialList=data.importConditions('distractors.csv'),
             seed=None, name='trials_context')
         thisExp.addLoop(trials_context)  # add the loop to the experiment
         thisTrials_context = trials_context.trialList[0]  # so we can initialise stimuli with some values
@@ -800,7 +725,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(distractors)
+            text_disctractors.setText(dist)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
@@ -989,7 +914,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_T1 = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('LuckList.csv', selection=lagT2),
+            trialList=data.importConditions('LuckList.csv'),
             seed=None, name='trials_T1')
         thisExp.addLoop(trials_T1)  # add the loop to the experiment
         thisTrials_T1 = trials_T1.trialList[0]  # so we can initialise stimuli with some values
@@ -1019,7 +944,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(distractors)
+            text_disctractors.setText(dist)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
@@ -1213,7 +1138,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         trials_T2 = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('LuckList.csv', selection=lagEnd),
+            trialList=data.importConditions('LuckList.csv'),
             seed=None, name='trials_T2')
         thisExp.addLoop(trials_T2)  # add the loop to the experiment
         thisTrials_T2 = trials_T2.trialList[0]  # so we can initialise stimuli with some values
@@ -1243,7 +1168,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('distractors.started', globalClock.getTime())
-            text_disctractors.setText(distractors)
+            text_disctractors.setText(dist)
             # keep track of which components have finished
             distractorsComponents = [text_disctractors]
             for thisComponent in distractorsComponents:
