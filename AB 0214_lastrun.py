@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on marzo 07, 2024, at 12:04
+    on abril 18, 2024, at 13:13
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -323,7 +323,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=0.0);
     
-    # --- Initialize components for Routine "context" ---
+    # --- Initialize components for Routine "T0_context" ---
     context_word = visual.TextStim(win=win, name='context_word',
         text='',
         font='Open Sans',
@@ -565,14 +565,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             for paramName in thisBlock:
                 globals()[paramName] = thisBlock[paramName]
         
-        # --- Prepare to start Routine "context" ---
+        # --- Prepare to start Routine "T0_context" ---
         continueRoutine = True
         # update component parameters for each repeat
-        thisExp.addData('context.started', globalClock.getTime())
+        thisExp.addData('T0_context.started', globalClock.getTime())
         context_word.setText(T0)
         # keep track of which components have finished
-        contextComponents = [context_word, blankContext]
-        for thisComponent in contextComponents:
+        T0_contextComponents = [context_word, blankContext]
+        for thisComponent in T0_contextComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -584,7 +584,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         frameN = -1
         
-        # --- Run Routine "context" ---
+        # --- Run Routine "T0_context" ---
         routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
             # get current time
@@ -672,7 +672,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in contextComponents:
+            for thisComponent in T0_contextComponents:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -681,11 +681,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # --- Ending Routine "context" ---
-        for thisComponent in contextComponents:
+        # --- Ending Routine "T0_context" ---
+        for thisComponent in T0_contextComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        thisExp.addData('context.stopped', globalClock.getTime())
+        thisExp.addData('T0_context.stopped', globalClock.getTime())
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()

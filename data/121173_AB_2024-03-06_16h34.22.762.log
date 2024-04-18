@@ -1,0 +1,314 @@
+12.4071 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016C31894BE0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016C31894B80>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016C318949A0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000016C31DFBB80>, multiSample=False, name='window1', numSamples=2, pos=(760, 390), screen=0, size=array([400, 300]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.4072 	EXP 	window1: mouseVisible = True
+12.4072 	EXP 	window1: backgroundImage = ''
+12.4072 	EXP 	window1: backgroundFit = 'none'
+12.4088 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.4088 	EXP 	window1: recordFrameIntervals = False
+12.5744 	EXP 	window1: recordFrameIntervals = True
+12.8576 	EXP 	Screen (0) actual frame rate measured at 60.66Hz
+12.8576 	EXP 	window1: recordFrameIntervals = False
+12.8577 	EXP 	window1: mouseVisible = True
+12.9164 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+17.4024 	EXP 	AB: status = STARTED
+17.4027 	EXP 	window1: mouseVisible = True
+17.5406 	EXP 	Created text_insctructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_insctructions', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+17.5408 	EXP 	window1: mouseVisible = True
+17.5421 	EXP 	Created context_word = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='context_word', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5423 	EXP 	window1: mouseVisible = True
+17.5437 	EXP 	Created blankContext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blankContext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5438 	EXP 	window1: mouseVisible = True
+17.5444 	EXP 	Created text_disctractors = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_disctractors', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5444 	EXP 	window1: mouseVisible = True
+17.5450 	EXP 	Created text_T1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_T1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5451 	EXP 	window1: mouseVisible = True
+17.5457 	EXP 	Created text_disctractors = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_disctractors', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5458 	EXP 	window1: mouseVisible = True
+17.5463 	EXP 	Created text_T2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_T2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5464 	EXP 	window1: mouseVisible = True
+17.5469 	EXP 	Created text_disctractors = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_disctractors', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5470 	EXP 	window1: mouseVisible = True
+17.5483 	EXP 	Created blankT1_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blankT1_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5484 	EXP 	window1: mouseVisible = True
+17.5573 	EXP 	Created text_T1ask = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_T1ask', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='?\n\nOdd-F    Even-J', units='height', win=Window(...), wrapWidth=1)
+17.5575 	EXP 	window1: mouseVisible = True
+17.5590 	EXP 	Created blankT1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blankT1_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5591 	EXP 	window1: mouseVisible = True
+17.5604 	EXP 	Created blankT2_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blankT2_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+17.5605 	EXP 	window1: mouseVisible = True
+17.5655 	EXP 	Created text_T2ask = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_T2ask', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='?\n\nRelated-F    Unrelated-J', units='height', win=Window(...), wrapWidth=1)
+17.5657 	EXP 	window1: mouseVisible = True
+17.5669 	EXP 	Created blankT2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blankT2_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0487 	EXP 	text_insctructions: autoDraw = True
+0.2189 	EXP 	Imported LuckList.csv as conditions, 9 conditions, 8 params
+0.2192 	EXP 	Created sequence: random, trialTypes=9, nReps=1, seed=None
+0.2194 	EXP 	New trial (rep=0, index=0): OrderedDict([('T0', 'XSTRAWX'), ('T2', 'XXHAYXX'), ('T1', 4444444), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'f'), ('responseT2', 'f')])
+0.2304 	EXP 	text_insctructions: autoDraw = False
+0.2304 	EXP 	context_word: height = 0.05
+0.2304 	EXP 	context_word: height = 0.05
+0.2304 	EXP 	context_word: height = 0.05
+0.2304 	EXP 	context_word: text = 'XSTRAWX'
+0.2304 	EXP 	context_word: autoDraw = True
+1.2120 	EXP 	blankContext: autoDraw = True
+1.2456 	EXP 	context_word: autoDraw = False
+2.2000 	EXP 	Imported distractors.csv as conditions, 19 conditions, 1 params
+2.2003 	EXP 	Created sequence: random, trialTypes=19, nReps=1, seed=None
+2.2004 	EXP 	New trial (rep=0, index=0): OrderedDict([('dist', 'DYGPMWR')])
+2.2130 	EXP 	blankContext: autoDraw = False
+2.2130 	EXP 	context_word: autoDraw = False
+2.2130 	EXP 	blankContext: autoDraw = False
+2.2130 	EXP 	text_disctractors: height = 0.05
+2.2130 	EXP 	text_disctractors: height = 0.05
+2.2130 	EXP 	text_disctractors: height = 0.05
+2.2130 	EXP 	text_disctractors: text = 'DYGPMWR'
+2.2130 	EXP 	text_disctractors: autoDraw = True
+2.2805 	EXP 	New trial (rep=0, index=1): OrderedDict([('dist', 'PSKDHLC')])
+2.2965 	EXP 	text_disctractors: autoDraw = False
+2.2965 	EXP 	text_disctractors: autoDraw = False
+2.2965 	EXP 	text_disctractors: height = 0.05
+2.2965 	EXP 	text_disctractors: height = 0.05
+2.2965 	EXP 	text_disctractors: height = 0.05
+2.2965 	EXP 	text_disctractors: text = 'PSKDHLC'
+2.2965 	EXP 	text_disctractors: autoDraw = True
+2.3645 	EXP 	New trial (rep=0, index=2): OrderedDict([('dist', 'CVSKHYF')])
+2.3803 	EXP 	text_disctractors: autoDraw = False
+2.3803 	EXP 	text_disctractors: autoDraw = False
+2.3803 	EXP 	text_disctractors: height = 0.05
+2.3803 	EXP 	text_disctractors: height = 0.05
+2.3803 	EXP 	text_disctractors: height = 0.05
+2.3803 	EXP 	text_disctractors: text = 'CVSKHYF'
+2.3803 	EXP 	text_disctractors: autoDraw = True
+2.4472 	EXP 	New trial (rep=0, index=3): OrderedDict([('dist', 'ZTWLDMH')])
+2.4635 	EXP 	text_disctractors: autoDraw = False
+2.4635 	EXP 	text_disctractors: autoDraw = False
+2.4635 	EXP 	text_disctractors: height = 0.05
+2.4635 	EXP 	text_disctractors: height = 0.05
+2.4635 	EXP 	text_disctractors: height = 0.05
+2.4635 	EXP 	text_disctractors: text = 'ZTWLDMH'
+2.4635 	EXP 	text_disctractors: autoDraw = True
+2.5304 	EXP 	New trial (rep=0, index=4): OrderedDict([('dist', 'HRQYSGD')])
+2.5465 	EXP 	text_disctractors: autoDraw = False
+2.5465 	EXP 	text_disctractors: autoDraw = False
+2.5465 	EXP 	text_disctractors: height = 0.05
+2.5465 	EXP 	text_disctractors: height = 0.05
+2.5465 	EXP 	text_disctractors: height = 0.05
+2.5465 	EXP 	text_disctractors: text = 'HRQYSGD'
+2.5465 	EXP 	text_disctractors: autoDraw = True
+2.6141 	EXP 	New trial (rep=0, index=5): OrderedDict([('dist', 'FBVMGYZ')])
+2.6299 	EXP 	text_disctractors: autoDraw = False
+2.6299 	EXP 	text_disctractors: autoDraw = False
+2.6299 	EXP 	text_disctractors: height = 0.05
+2.6299 	EXP 	text_disctractors: height = 0.05
+2.6299 	EXP 	text_disctractors: height = 0.05
+2.6299 	EXP 	text_disctractors: text = 'FBVMGYZ'
+2.6299 	EXP 	text_disctractors: autoDraw = True
+2.6977 	EXP 	New trial (rep=0, index=6): OrderedDict([('dist', 'KMJCWBH')])
+2.7137 	EXP 	text_disctractors: autoDraw = False
+2.7137 	EXP 	text_disctractors: autoDraw = False
+2.7137 	EXP 	text_disctractors: height = 0.05
+2.7137 	EXP 	text_disctractors: height = 0.05
+2.7137 	EXP 	text_disctractors: height = 0.05
+2.7137 	EXP 	text_disctractors: text = 'KMJCWBH'
+2.7137 	EXP 	text_disctractors: autoDraw = True
+2.7813 	EXP 	New trial (rep=0, index=7): OrderedDict([('dist', 'SGWZLKR')])
+2.7976 	EXP 	text_disctractors: autoDraw = False
+2.7976 	EXP 	text_disctractors: autoDraw = False
+2.7976 	EXP 	text_disctractors: height = 0.05
+2.7976 	EXP 	text_disctractors: height = 0.05
+2.7976 	EXP 	text_disctractors: height = 0.05
+2.7976 	EXP 	text_disctractors: text = 'SGWZLKR'
+2.7976 	EXP 	text_disctractors: autoDraw = True
+2.8646 	EXP 	New trial (rep=0, index=8): OrderedDict([('dist', 'FTVJCQG')])
+2.8802 	EXP 	text_disctractors: autoDraw = False
+2.8802 	EXP 	text_disctractors: autoDraw = False
+2.8802 	EXP 	text_disctractors: height = 0.05
+2.8802 	EXP 	text_disctractors: height = 0.05
+2.8802 	EXP 	text_disctractors: height = 0.05
+2.8802 	EXP 	text_disctractors: text = 'FTVJCQG'
+2.8802 	EXP 	text_disctractors: autoDraw = True
+2.9476 	EXP 	New trial (rep=0, index=9): OrderedDict([('dist', 'VYXBTSN')])
+2.9634 	EXP 	text_disctractors: autoDraw = False
+2.9634 	EXP 	text_disctractors: height = 0.05
+2.9634 	EXP 	text_disctractors: height = 0.05
+2.9634 	EXP 	text_disctractors: height = 0.05
+2.9634 	EXP 	text_disctractors: text = 'VYXBTSN'
+2.9634 	EXP 	text_disctractors: autoDraw = True
+3.0309 	EXP 	New trial (rep=0, index=10): OrderedDict([('dist', 'TPMRWBX')])
+3.0471 	EXP 	text_disctractors: autoDraw = False
+3.0471 	EXP 	text_disctractors: height = 0.05
+3.0471 	EXP 	text_disctractors: height = 0.05
+3.0471 	EXP 	text_disctractors: height = 0.05
+3.0471 	EXP 	text_disctractors: text = 'TPMRWBX'
+3.0471 	EXP 	text_disctractors: autoDraw = True
+3.1146 	EXP 	New trial (rep=0, index=11): OrderedDict([('dist', 'TMZYXVJ')])
+3.1313 	EXP 	text_disctractors: autoDraw = False
+3.1313 	EXP 	text_disctractors: height = 0.05
+3.1313 	EXP 	text_disctractors: height = 0.05
+3.1313 	EXP 	text_disctractors: height = 0.05
+3.1313 	EXP 	text_disctractors: text = 'TMZYXVJ'
+3.1313 	EXP 	text_disctractors: autoDraw = True
+3.1977 	EXP 	New trial (rep=0, index=12): OrderedDict([('dist', 'RMTKWFQ')])
+3.2147 	EXP 	text_disctractors: autoDraw = False
+3.2147 	EXP 	text_disctractors: height = 0.05
+3.2147 	EXP 	text_disctractors: height = 0.05
+3.2147 	EXP 	text_disctractors: height = 0.05
+3.2147 	EXP 	text_disctractors: text = 'RMTKWFQ'
+3.2147 	EXP 	text_disctractors: autoDraw = True
+3.2814 	EXP 	New trial (rep=0, index=13): OrderedDict([('dist', 'GBDHMJF')])
+3.2977 	EXP 	text_disctractors: autoDraw = False
+3.2977 	EXP 	text_disctractors: height = 0.05
+3.2977 	EXP 	text_disctractors: height = 0.05
+3.2977 	EXP 	text_disctractors: height = 0.05
+3.2977 	EXP 	text_disctractors: text = 'GBDHMJF'
+3.2977 	EXP 	text_disctractors: autoDraw = True
+3.3643 	EXP 	New trial (rep=0, index=14): OrderedDict([('dist', 'MSGNZDX')])
+3.3809 	EXP 	text_disctractors: autoDraw = False
+3.3809 	EXP 	text_disctractors: height = 0.05
+3.3809 	EXP 	text_disctractors: height = 0.05
+3.3809 	EXP 	text_disctractors: height = 0.05
+3.3809 	EXP 	text_disctractors: text = 'MSGNZDX'
+3.3809 	EXP 	text_disctractors: autoDraw = True
+3.4477 	EXP 	New trial (rep=0, index=15): OrderedDict([('dist', 'PNHZFRK')])
+3.4642 	EXP 	text_disctractors: autoDraw = False
+3.4642 	EXP 	text_disctractors: height = 0.05
+3.4642 	EXP 	text_disctractors: height = 0.05
+3.4642 	EXP 	text_disctractors: height = 0.05
+3.4642 	EXP 	text_disctractors: text = 'PNHZFRK'
+3.4642 	EXP 	text_disctractors: autoDraw = True
+3.5315 	EXP 	New trial (rep=0, index=16): OrderedDict([('dist', 'TBCNLFY')])
+3.5476 	EXP 	text_disctractors: autoDraw = False
+3.5476 	EXP 	text_disctractors: height = 0.05
+3.5476 	EXP 	text_disctractors: height = 0.05
+3.5476 	EXP 	text_disctractors: height = 0.05
+3.5476 	EXP 	text_disctractors: text = 'TBCNLFY'
+3.5476 	EXP 	text_disctractors: autoDraw = True
+3.6149 	EXP 	New trial (rep=0, index=17): OrderedDict([('dist', 'TXWSBDY')])
+3.6311 	EXP 	text_disctractors: autoDraw = False
+3.6311 	EXP 	text_disctractors: height = 0.05
+3.6311 	EXP 	text_disctractors: height = 0.05
+3.6311 	EXP 	text_disctractors: height = 0.05
+3.6311 	EXP 	text_disctractors: text = 'TXWSBDY'
+3.6311 	EXP 	text_disctractors: autoDraw = True
+3.6979 	EXP 	New trial (rep=0, index=18): OrderedDict([('dist', 'BFSHVMY')])
+3.7147 	EXP 	text_disctractors: autoDraw = False
+3.7147 	EXP 	text_disctractors: height = 0.05
+3.7147 	EXP 	text_disctractors: height = 0.05
+3.7147 	EXP 	text_disctractors: height = 0.05
+3.7147 	EXP 	text_disctractors: text = 'BFSHVMY'
+3.7147 	EXP 	text_disctractors: autoDraw = True
+3.7979 	EXP 	text_disctractors: autoDraw = False
+3.7979 	EXP 	text_T1: height = 0.05
+3.7979 	EXP 	text_T1: height = 0.05
+3.7979 	EXP 	text_T1: height = 0.05
+3.7979 	EXP 	text_T1: text = 4444444
+3.8821 	EXP 	text_T1: autoDraw = True
+3.9531 	EXP 	Imported LuckList.csv as conditions, 9 conditions, 8 params
+3.9534 	EXP 	Created sequence: random, trialTypes=9, nReps=1, seed=None
+3.9536 	EXP 	New trial (rep=0, index=0): OrderedDict([('T0', 'XSTOREX'), ('T2', 'XXSHOPX'), ('T1', 1111111), ('lagT1', 9), ('lagT2', 3), ('lagEnd', 8), ('responseT1', 'j'), ('responseT2', 'f')])
+3.9646 	EXP 	text_T1: autoDraw = False
+3.9646 	EXP 	text_T1: autoDraw = False
+3.9646 	EXP 	text_disctractors: text = 'BFSHVMY'
+3.9646 	EXP 	text_disctractors: autoDraw = True
+4.0320 	EXP 	New trial (rep=0, index=1): OrderedDict([('T0', 'XSTRAWX'), ('T2', 'XXHAYXX'), ('T1', 4444444), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'f'), ('responseT2', 'f')])
+4.0481 	EXP 	text_disctractors: autoDraw = False
+4.0481 	EXP 	text_disctractors: autoDraw = False
+4.0481 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.0481 	EXP 	text_disctractors: autoDraw = True
+4.1160 	EXP 	New trial (rep=0, index=2): OrderedDict([('T0', 'XPONDER'), ('T2', 'XTHINKX'), ('T1', 5555555), ('lagT1', 9), ('lagT2', 7), ('lagEnd', 4), ('responseT1', 'j'), ('responseT2', 'f')])
+4.1316 	EXP 	text_disctractors: autoDraw = False
+4.1316 	EXP 	text_disctractors: autoDraw = False
+4.1316 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.1316 	EXP 	text_disctractors: autoDraw = True
+4.1989 	EXP 	New trial (rep=0, index=3): OrderedDict([('T0', 'XWEEDSX'), ('T2', 'XROOTSX'), ('T1', 7777777), ('lagT1', 8), ('lagT2', 3), ('lagEnd', 9), ('responseT1', 'j'), ('responseT2', 'f')])
+4.2152 	EXP 	text_disctractors: autoDraw = False
+4.2152 	EXP 	text_disctractors: autoDraw = False
+4.2152 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.2152 	EXP 	text_disctractors: autoDraw = True
+4.2826 	EXP 	New trial (rep=0, index=4): OrderedDict([('T0', 'XXCATXX'), ('T2', 'XKITTEN'), ('T1', 9999999), ('lagT1', 10), ('lagT2', 1), ('lagEnd', 9), ('responseT1', 'j'), ('responseT2', 'f')])
+4.2993 	EXP 	text_disctractors: autoDraw = False
+4.2993 	EXP 	text_disctractors: autoDraw = False
+4.2993 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.2993 	EXP 	text_disctractors: autoDraw = True
+4.3657 	EXP 	New trial (rep=0, index=5): OrderedDict([('T0', 'XXBAGXX'), ('T2', 'XXSACKX'), ('T1', 3333333), ('lagT1', 9), ('lagT2', 3), ('lagEnd', 8), ('responseT1', 'j'), ('responseT2', 'f')])
+4.3817 	EXP 	text_disctractors: autoDraw = False
+4.3817 	EXP 	text_disctractors: autoDraw = False
+4.3817 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.3817 	EXP 	text_disctractors: autoDraw = True
+4.4491 	EXP 	New trial (rep=0, index=6): OrderedDict([('T0', 'PROMISE'), ('T2', 'XPLEDGE'), ('T1', 2222222), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'f'), ('responseT2', 'f')])
+4.4651 	EXP 	text_disctractors: autoDraw = False
+4.4651 	EXP 	text_disctractors: autoDraw = False
+4.4651 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.4651 	EXP 	text_disctractors: autoDraw = True
+4.5330 	EXP 	New trial (rep=0, index=7): OrderedDict([('T0', 'XHANDSX'), ('T2', 'XXFEETX'), ('T1', 7777777), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'j'), ('responseT2', 'f')])
+4.5489 	EXP 	text_disctractors: autoDraw = False
+4.5489 	EXP 	text_disctractors: autoDraw = False
+4.5489 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.5489 	EXP 	text_disctractors: autoDraw = True
+4.6162 	EXP 	New trial (rep=0, index=8): OrderedDict([('T0', 'CURTAIN'), ('T2', 'XDRAPEX'), ('T1', 8888888), ('lagT1', 9), ('lagT2', 7), ('lagEnd', 4), ('responseT1', 'f'), ('responseT2', 'f')])
+4.6323 	EXP 	text_disctractors: autoDraw = False
+4.6323 	EXP 	text_disctractors: autoDraw = False
+4.6323 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.6323 	EXP 	text_disctractors: autoDraw = True
+4.7155 	EXP 	text_disctractors: autoDraw = False
+4.7155 	EXP 	text_disctractors: autoDraw = False
+4.7155 	EXP 	text_T2: height = 0.05
+4.7155 	EXP 	text_T2: height = 0.05
+4.7155 	EXP 	text_T2: height = 0.05
+4.7155 	EXP 	text_T2: text = 'XDRAPEX'
+4.7992 	EXP 	text_T2: autoDraw = True
+4.8701 	EXP 	Imported LuckList.csv as conditions, 9 conditions, 8 params
+4.8705 	EXP 	Created sequence: random, trialTypes=9, nReps=1, seed=None
+4.8707 	EXP 	New trial (rep=0, index=0): OrderedDict([('T0', 'XXBAGXX'), ('T2', 'XXSACKX'), ('T1', 3333333), ('lagT1', 9), ('lagT2', 3), ('lagEnd', 8), ('responseT1', 'j'), ('responseT2', 'f')])
+4.8823 	EXP 	text_T2: autoDraw = False
+4.8823 	EXP 	text_T2: autoDraw = False
+4.8823 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.8823 	EXP 	text_disctractors: autoDraw = True
+4.9501 	EXP 	New trial (rep=0, index=1): OrderedDict([('T0', 'XSTOREX'), ('T2', 'XXSHOPX'), ('T1', 1111111), ('lagT1', 9), ('lagT2', 3), ('lagEnd', 8), ('responseT1', 'j'), ('responseT2', 'f')])
+4.9667 	EXP 	text_disctractors: autoDraw = False
+4.9667 	EXP 	text_disctractors: autoDraw = False
+4.9667 	EXP 	text_disctractors: text = 'BFSHVMY'
+4.9667 	EXP 	text_disctractors: autoDraw = True
+5.0336 	EXP 	New trial (rep=0, index=2): OrderedDict([('T0', 'XSTRAWX'), ('T2', 'XXHAYXX'), ('T1', 4444444), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'f'), ('responseT2', 'f')])
+5.0492 	EXP 	text_disctractors: autoDraw = False
+5.0492 	EXP 	text_disctractors: autoDraw = False
+5.0492 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.0492 	EXP 	text_disctractors: autoDraw = True
+5.1165 	EXP 	New trial (rep=0, index=3): OrderedDict([('T0', 'XHANDSX'), ('T2', 'XXFEETX'), ('T1', 7777777), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'j'), ('responseT2', 'f')])
+5.1324 	EXP 	text_disctractors: autoDraw = False
+5.1324 	EXP 	text_disctractors: autoDraw = False
+5.1324 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.1324 	EXP 	text_disctractors: autoDraw = True
+5.2000 	EXP 	New trial (rep=0, index=4): OrderedDict([('T0', 'XXCATXX'), ('T2', 'XKITTEN'), ('T1', 9999999), ('lagT1', 10), ('lagT2', 1), ('lagEnd', 9), ('responseT1', 'j'), ('responseT2', 'f')])
+5.2158 	EXP 	text_disctractors: autoDraw = False
+5.2158 	EXP 	text_disctractors: autoDraw = False
+5.2158 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.2158 	EXP 	text_disctractors: autoDraw = True
+5.2833 	EXP 	New trial (rep=0, index=5): OrderedDict([('T0', 'XPONDER'), ('T2', 'XTHINKX'), ('T1', 5555555), ('lagT1', 9), ('lagT2', 7), ('lagEnd', 4), ('responseT1', 'j'), ('responseT2', 'f')])
+5.2992 	EXP 	text_disctractors: autoDraw = False
+5.2992 	EXP 	text_disctractors: autoDraw = False
+5.2992 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.2992 	EXP 	text_disctractors: autoDraw = True
+5.3672 	EXP 	New trial (rep=0, index=6): OrderedDict([('T0', 'PROMISE'), ('T2', 'XPLEDGE'), ('T1', 2222222), ('lagT1', 7), ('lagT2', 1), ('lagEnd', 12), ('responseT1', 'f'), ('responseT2', 'f')])
+5.3829 	EXP 	text_disctractors: autoDraw = False
+5.3829 	EXP 	text_disctractors: autoDraw = False
+5.3829 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.3829 	EXP 	text_disctractors: autoDraw = True
+5.4507 	EXP 	New trial (rep=0, index=7): OrderedDict([('T0', 'CURTAIN'), ('T2', 'XDRAPEX'), ('T1', 8888888), ('lagT1', 9), ('lagT2', 7), ('lagEnd', 4), ('responseT1', 'f'), ('responseT2', 'f')])
+5.4667 	EXP 	text_disctractors: autoDraw = False
+5.4667 	EXP 	text_disctractors: autoDraw = False
+5.4667 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.4667 	EXP 	text_disctractors: autoDraw = True
+5.5343 	EXP 	New trial (rep=0, index=8): OrderedDict([('T0', 'XWEEDSX'), ('T2', 'XROOTSX'), ('T1', 7777777), ('lagT1', 8), ('lagT2', 3), ('lagEnd', 9), ('responseT1', 'j'), ('responseT2', 'f')])
+5.5498 	EXP 	text_disctractors: autoDraw = False
+5.5498 	EXP 	text_disctractors: autoDraw = False
+5.5498 	EXP 	text_disctractors: text = 'BFSHVMY'
+5.5498 	EXP 	text_disctractors: autoDraw = True
+5.6336 	EXP 	text_disctractors: autoDraw = False
+5.6336 	EXP 	text_disctractors: autoDraw = False
+5.6336 	EXP 	blankT1_1: autoDraw = True
+6.6365 	EXP 	blankT1_1: autoDraw = False
+6.6365 	EXP 	text_T1ask: autoDraw = True
+8.6198 	EXP 	blankT1_2: autoDraw = True
+8.6364 	EXP 	text_T1ask: autoDraw = False
+9.0056 	DATA 	Mouse: Left button down, pos=(213,103)
+9.1890 	DATA 	Mouse:  Left button up, pos=(213,103)
+9.6505 	EXP 	window1: mouseVisible = True

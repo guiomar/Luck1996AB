@@ -1,4 +1,4 @@
-context,T2,T1,lagT1,lagT2,lagEnd,responseT1,responseT2
+T0,T2,T1,lagT1,lagT2,lagEnd,responseT1,responseT2
 XHANDSX,XXFEETX,7777777,7,1,12,j,f
 XSTOREX,XXSHOPX,1111111,9,3,8,j,f
 CURTAIN,XDRAPEX,8888888,9,7,4,f,f
